@@ -1,30 +1,37 @@
-# Donation Smart Contract 💰
+# 💰 Donation Smart Contract
 
-A simple Solidity contract that accepts donations and allows the owner to withdraw funds.  
-Created by **PavlenkoTM** — for learning and testing Web3 automation.
+[![Solidity CI](https://github.com/pavlenkotm/web3-donation-contract/actions/workflows/solidity.yml/badge.svg)](https://github.com/pavlenkotm/web3-donation-contract/actions/workflows/solidity.yml)
+[![Open in Remix](https://img.shields.io/badge/Open%20in-Remix-orange?logo=ethereum)](https://remix.ethereum.org/#version=soljson-v0.8.20+commit.a1b79de6.js&optimize=true&runs=200&evmVersion=london)
 
-## 🧩 Features
-- Accepts ETH transfers
-- Emits `Donated` and `Withdrawn` events
-- Owner can withdraw collected funds
-- View current contract balance
+Простой смарт-контракт на **Solidity 0.8.20**, который принимает пожертвования и позволяет владельцу вывести средства.  
+Автор — **PavlenkoTM**
 
-## ⚙️ Compile locally (Foundry)
+---
+
+## 🧩 Что умеет
+- Принимает переводы ETH  
+- Отправляет события `Donated` и `Withdrawn`  
+- Позволяет владельцу вывести баланс  
+- Показывает текущий баланс через `getBalance()`
+
+---
+
+## 🚀 Быстрый тест в Remix
+
+1. Нажми кнопку **“Open in Remix”** вверху README  
+2. В Remix создастся файл `Donation.sol`  
+3. Нажми **Compile 0.8.20**  
+4. Перейди во вкладку **Deploy & Run**  
+   - В поле *Value* введи, например, `0.01 ether`  
+   - Нажми **Transact** → внизу появится событие `Donated`  
+5. Нажми **withdraw()**, чтобы вывести средства (только владелец контракта).
+
+---
+
+## ⚙️ Как собрать локально через Foundry
+
 ```bash
-# install foundry if not installed
 curl -L https://foundry.paradigm.xyz | bash
 ~/.foundry/bin/foundryup
-
-# build
 ~/.foundry/bin/forge build
-```
 
-## 🚀 Test quickly in Remix
-- Open https://remix.ethereum.org
-- Create a file `Donation.sol`, paste the contract from `contracts/Donation.sol`
-- Compile with 0.8.20
-- Deploy `Donation`
-- Use the "low-level" value field to send donations; call `withdraw()` as owner
-
-## 📬 Contact
-Telegram: [@pavlenkotm](https://t.me/pavlenkotm)
