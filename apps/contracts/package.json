@@ -1,0 +1,15 @@
+{
+  "name": "@donation-ecosystem/contracts",
+  "version": "1.0.0",
+  "description": "Smart contracts for donation ecosystem",
+  "scripts": {
+    "build": "forge build",
+    "test": "forge test",
+    "deploy:local": "forge script script/Deploy.s.sol:DeployScript --rpc-url http://localhost:8545 --broadcast",
+    "deploy:testnet": "forge script script/Deploy.s.sol:DeployScript --rpc-url $TESTNET_RPC_URL --broadcast --verify",
+    "clean": "forge clean"
+  },
+  "keywords": ["solidity", "smart-contracts", "web3", "donation"],
+  "author": "PavlenkoTM",
+  "license": "MIT"
+}

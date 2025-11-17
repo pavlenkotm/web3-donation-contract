@@ -1,0 +1,14 @@
+{
+  "name": "@donation-ecosystem/analytics",
+  "version": "1.0.0",
+  "description": "Python analytics microservice for donation data",
+  "scripts": {
+    "dev": "python main.py",
+    "start": "python main.py",
+    "build": "echo 'No build needed for Python'",
+    "test": "pytest",
+    "clean": "rm -rf __pycache__ .pytest_cache"
+  },
+  "keywords": ["analytics", "python", "fastapi", "microservice"],
+  "author": "PavlenkoTM"
+}

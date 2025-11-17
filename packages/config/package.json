@@ -1,0 +1,10 @@
+{
+  "name": "@donation-ecosystem/config",
+  "version": "1.0.0",
+  "description": "Configuration files for donation ecosystem",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo 'No build needed'",
+    "clean": "rm -rf node_modules"
+  }
+}
