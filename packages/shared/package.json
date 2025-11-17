@@ -1,0 +1,23 @@
+{
+  "name": "@donation-ecosystem/shared",
+  "version": "1.0.0",
+  "description": "Shared utilities and types for donation ecosystem",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint src/",
+    "clean": "rm -rf dist node_modules"
+  },
+  "dependencies": {
+    "ethers": "^6.9.0",
+    "joi": "^17.11.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "@types/node": "^20.10.6",
+    "jest": "^29.7.0",
+    "eslint": "^8.56.0"
+  }
+}
